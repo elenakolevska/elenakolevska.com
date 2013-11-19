@@ -1,0 +1,36 @@
+{
+  "name": "elenakolevska.com",
+  "description": "Web developer",
+  "version": "0.1.0",
+  "keywords": [
+    "Elena Kolevska",
+    "Web developer",
+    "PHP",
+    "Laravel",
+    "Full stack"
+  ],
+  "homepage": "http://elenakolevska.com",
+  "author": "Elena Kolevska",
+  "scripts": {
+    "test": "grunt test"
+  },
+  "repository": {
+    "type": "git",
+    "url": ""
+  },
+  "licenses": [
+    {
+      "type": "Apache-2.0",
+      "url": "http://www.apache.org/licenses/LICENSE-2.0"
+    }
+  ],
+  "devDependencies": {
+    "grunt": "~0.4.1",
+    "grunt-contrib-concat": "~0.3.0",
+    "grunt-contrib-less": "~0.8.1",
+    "grunt-contrib-watch": "~0.5.3",
+    "less": "~1.4.2"
+  },
+  "main": "Gruntfile.js",
+  "license": "BSD"
+}
