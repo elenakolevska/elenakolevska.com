@@ -17,13 +17,6 @@
 .mg-b-sm{
 	margin-bottom: 20px;
 }
-.avatar {
-	border-radius: 50%;
-	border:10px solid darken(@brand-primary,10%);
-	background: #fff;
-	padding:2px;
-	box-shadow: 1px 1px 8px #000;
-}
 body{
 	background: @gray-lighter;
 }
@@ -33,9 +26,16 @@ h1,h2,h3,h4 {
 
 
 /*==========  Navigation  ==========*/
-.navbar-default .navbar-nav>li>a{
-	color: @gray;
-	font-size: 1.2em;
+.navbar-default {
+	background-color: darken(@brand-primary,10%);
+	border: darken(@brand-primary,40%);
+	.navbar-nav>li>a{
+		color: lighten(@brand-warning,10%);
+		font-size: 1em;
+		&:hover{
+			color: darken(@brand-warning,20%);
+		}
+	}
 }
 
 #header{
@@ -48,7 +48,35 @@ h1,h2,h3,h4 {
 	h1 {
 		font-size: 4em;
 		color: @brand-warning;
-		text-shadow: 1px 1px 3px #000;		
+		text-shadow: 1px 1px 3px #000;
+	}
+	a{
+		font-style: italic;
+		color: lighten(@brand-warning,10%);
+	}
+	.avatar {
+		border-radius: 50%;
+		border:10px solid darken(@brand-primary,10%);
+		background: #fff;
+		padding:2px;
+		box-shadow: 1px 1px 8px #000;
+	}
+	.status{
+		.highlight{
+			font-style: italic;
+			color: darken(@brand-warning,10%);
+			font-size: 1em;
+		}
+	}
+	.highlight{
+		font-style: italic;
+		color: lighten(@brand-warning,10%);
+	}
+	.fa-code{
+		.rotate(13deg);
+		font-size: 10em;
+		color:darken(@brand-primary,10%);
+		position: absolute;
 	}
 }
 #portfolio{
@@ -62,7 +90,7 @@ h1,h2,h3,h4 {
 		line-height: 3em;		
 	}
 	h4,a{
-		color: @brand-warning;
+		color: darken(@brand-warning,10%);
 		text-shadow:1px 1px 3px @gray;
 	}
 	hr{
@@ -72,6 +100,12 @@ h1,h2,h3,h4 {
 	}
 	img{
 		border: 2px solid  @gray-dark;
+	}
+	.fa-code-fork{
+		.rotate(13deg);
+		font-size: 30em;
+		color:@gray-light;
+		position: absolute;
 	}
 }
 #contact{

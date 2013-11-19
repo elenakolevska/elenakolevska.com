@@ -5,6 +5,7 @@
 	<link rel="stylesheet" href="style/main.css">
 	<script src="js/application.js"></script>
 	<link href='http://fonts.googleapis.com/css?family=Crete+Round:400,400italic' rel='stylesheet' type='text/css'>
+	<link href="//netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css" rel="stylesheet">
 </head>
 <body>
 	<div class="wrap">
@@ -45,15 +46,15 @@
 					<div class="col-md-4 col-md-offset-1 text-center">
 						<img src="img/pc.jpg" alt="" class="img-responsive avatar">
 						<div class="status text-left">
-							<h4>Status: <span>Busy</span></h4>
-							<p>Accepting new projects in December</p>
+							<h4>Work status: <span>Busy</span></h4>
+							<p class="highlight">Accepting new projects in December</p>
 						</div>
 					</div>
 					<div class="col-md-7 mg-t-bg">
 						<h1>Hi, I'm Elena</h1>
-						<div>I'm a backend web developer, but you may hear people call me a "full-stack" one. I live on a mountain in Brasil with my baby son and his dad. I tweet as @elenanosnaweb and sometimes write for laravel.com.br</div>
-						<div class="mg-t-bg">Technology of choice: PHP</div>
-						<div>Framework of choice: Laravel</div>
+						<div>I'm a backend web developer, but you may hear people call me a "full-stack" one. I live on a mountain in Brasil with my baby son and his dad. I tweet as <a href="https://twitter.com/elena_nosnaweb" target="_blank">@elenanosnaweb</a> and sometimes write for <a href="http://laravel.com.br" target="_blank">laravel.com.br</a></div>
+						<div class="mg-t-bg highlight">Technology of choice: PHP</div>
+						<div class="highlight">Framework of choice: Laravel</div>
 					</div>
 				</div>
 			</div>
@@ -61,6 +62,7 @@
 
 		<!-- ==========  Portfolio  ========== -->
 		<section id="portfolio">
+			<i class="fa fa-code-fork"></i> 
 			<div class="container">
 			<div class="row">
 				<div class="col-md-12 text-center">
@@ -131,11 +133,11 @@
 					  </div>
 					  <div class="form-group">
 					    <label for="exampleInputPassword1">Name</label>
-					    <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Password">
+					    <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Name">
 					  </div>
 					  <div class="form-group">
 					    <label for="exampleInputPassword1">Message</label>
-					    <textarea class="form-control" rows="3"></textarea>
+					    <textarea class="form-control" rows="3" placheholder="Message"></textarea>
 					  </div>
 					  <button type="submit" class="btn btn-primary">Submit</button>
 					</form>					
