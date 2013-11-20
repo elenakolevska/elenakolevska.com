@@ -84,10 +84,15 @@ h1,h2,h3,h4 {
 	padding: 60px 0;
 	color: @gray-dark;
 	border-bottom: 1px solid @gray;
+	.project{
+		min-height: 305px;
+		&:hover img.top{
+			opacity: 0;
+		}
+	}
 	h2{
 		text-shadow: 1px 1px 2px @gray-lighter;
 		font-size: 3em;		
-		line-height: 3em;		
 	}
 	h4,a{
 		color: darken(@brand-warning,10%);
@@ -98,9 +103,19 @@ h1,h2,h3,h4 {
 		background: @gray;
 		margin: 50px auto;
 	}
+	.cf{
+		position: relative;
+		min-height: 300px;
+	}
 	img{
 		border: 2px solid  @gray-dark;
-	}
+		position:absolute;
+		left:0;
+		-webkit-transition: opacity 0.1s ease-in-out;
+		-moz-transition: opacity 0.1s ease-in-out;
+		-o-transition: opacity 0.1s ease-in-out;
+		transition: opacity 0.1s ease-in-out;
+  	}
 	.fa-code-fork{
 		.rotate(13deg);
 		font-size: 30em;
@@ -118,5 +133,13 @@ h1,h2,h3,h4 {
 	background: @gray-dark;
 	padding: 10px 0;
 	border-top: 1px solid @gray;
-	img {width: 30px; margin: 0 8px;}
+	i {
+		font-size: 1.5em;
+		line-height: 1.5em;
+		color: @gray-light;
+		margin: 0 8px;
+		&:hover{
+			color: darken(@brand-warning,40%);
+	}
+	}
 }

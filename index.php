@@ -47,12 +47,12 @@
 						<img src="img/pc.jpg" alt="" class="img-responsive avatar">
 						<div class="status text-left">
 							<h4>Work status: <span>Busy</span></h4>
-							<p class="highlight">Accepting new projects in December</p>
+							<p class="highlight">Accepting new projects in January 2014</p>
 						</div>
 					</div>
 					<div class="col-md-7 mg-t-bg">
 						<h1>Hi, I'm Elena</h1>
-						<div>I'm a backend web developer, but you may hear people call me a "full-stack" one. I live on a mountain in Brasil with my baby son and his dad. I tweet as <a href="https://twitter.com/elena_nosnaweb" target="_blank">@elenanosnaweb</a> and sometimes write for <a href="http://laravel.com.br" target="_blank">laravel.com.br</a></div>
+						<div>I'm a backend web developer, but I've also been called a "full-stack" one a lot. I live on a mountain in Brasil with my baby son and his dad. I tweet as <a href="https://twitter.com/elena_nosnaweb" target="_blank">@elenanosnaweb</a> and sometimes write for <a href="http://laravel.com.br" target="_blank">laravel.com.br</a></div>
 						<div class="mg-t-bg highlight">Technology of choice: PHP</div>
 						<div class="highlight">Framework of choice: Laravel</div>
 					</div>
@@ -66,51 +66,65 @@
 			<div class="container">
 			<div class="row">
 				<div class="col-md-12 text-center">
-					<h2>Some of my latest work</h2>
+					<h2>Latest work</h2>
 				</div>
 			</div>
 			<hr>
-			<div class="row mg-t-bg">
+			<div class="row mg-t-bg project">
 				<div class="col-md-5 col-md-offset-1">
-					<img src="img/project.gif" class="img-responsive" alt="">
+					<div class="cf">
+						<img src="img/sportbook-com-vc-c.png" class="img-responsive bottom" alt="">
+						<img src="img/sportbook-com-vc-g.png" class="img-responsive top" alt="">
+					</div>
 				</div>
 				<div class="col-md-6 text-left">
-					<h4>A pretty project</h4>
+					<h4>Sportbook.com.vc</h4>
+					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Earum id sapiente possimus eaque necessitatibus atque tempore soluta temporibus! Error iure expedita tempora deleniti ducimus fuga aliquam dolorem tenetur mollitia accusamus!</p>
+					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Earum id sapiente possimus eaque necessitatibus atque tempore soluta temporibus! Error iure expedita tempora deleniti ducimus fuga aliquam dolorem tenetur mollitia accusamus!</p>
 					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Earum id sapiente possimus eaque necessitatibus atque tempore soluta temporibus! Error iure expedita tempora deleniti ducimus fuga aliquam dolorem tenetur mollitia accusamus!</p>
 					<a href="#">More...</a>
 				</div>
 			</div>
 			<hr>
-			<div class="row mg-t-bg">
-				<div class="col-md-6 text-right">
-					<h4>A pretty project</h4>
+			<div class="row mg-t-bg project">
+				<div class="col-md-6 col-md-push-6">
+					<div class="cf">
+						<img src="img/pestservice411-c.png" class="img-responsive bottom" alt="">
+						<img src="img/pestservice411-g.png" class="img-responsive top" alt="">
+					</div>
+				</div>
+				<div class="col-md-6 col-md-pull-6 text-right">
+					<h4>Pestservice 411</h4>
 					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Earum id sapiente possimus eaque necessitatibus atque tempore soluta temporibus! Error iure expedita tempora deleniti ducimus fuga aliquam dolorem tenetur mollitia accusamus!</p>
 					<a href="#">More...</a>
 				</div>
-				<div class="col-md-6">
-					<img src="img/project.gif" class="img-responsive" alt="">
-				</div>
 			</div>
 			<hr>
-			<div class="row mg-t-bg">
+			<div class="row mg-t-bg project">
 				<div class="col-md-5 col-md-offset-1">
-					<img src="img/project.gif" class="img-responsive" alt="">
+					<div class="cf">
+						<img src="img/nosnatrilha-c.png" class="img-responsive bottom" alt="">
+						<img src="img/nosnatrilha-g.png" class="img-responsive top" alt="">
+					</div>
 				</div>
 				<div class="col-md-6 text-left">
-					<h4>A pretty project</h4>
-					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Earum id sapiente possimus eaque necessitatibus atque tempore soluta temporibus! Error iure expedita tempora deleniti ducimus fuga aliquam dolorem tenetur mollitia accusamus!</p>
+					<h4>Pousada Nós Na Trilha</h4>
+					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Earum id sapiente possimus eaque necessitatibus atque tempore soluta temporibus! Error iure expedita tempora deleniti ducimus fuga aliquam dolorem tenetur mollitia accusamus! Lorem ipsum dolor sit amet, consectetur adipisicing elit. Earum id sapiente possimus eaque necessitatibus atque tempore soluta temporibus! Error iure expedita tempora deleniti ducimus fuga aliquam dolorem tenetur mollitia accusamus!</p>
 					<a href="#">More...</a>
 				</div>
 			</div>
 			<hr>
-			<div class="row mg-t-bg">
-				<div class="col-md-6 text-right">
-					<h4>A pretty project</h4>
+			<div class="row mg-t-bg project">
+				<div class="col-md-6  col-md-push-6">
+					<div class="cf">
+						<img src="img/lmas-c.png" class="img-responsive bottom" alt="">
+						<img src="img/lmas-g.png" class="img-responsive top" alt="">
+					</div>
+				</div>
+				<div class="col-md-6  col-md-pull-6 text-right">
+					<h4>Labour market analysis software</h4>
 					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Earum id sapiente possimus eaque necessitatibus atque tempore soluta temporibus! Error iure expedita tempora deleniti ducimus fuga aliquam dolorem tenetur mollitia accusamus!</p>
 					<a href="#">More...</a>
-				</div>
-				<div class="col-md-6">
-					<img src="img/project.gif" class="img-responsive" alt="">
 				</div>
 			</div>
 			</div>
@@ -152,9 +166,9 @@
 			<div class="container">
 				<div class="row">
 					<div class="col-md-4 col-md-offset-4 text-center">
-						<a href="#" class="social"><img src="img/google-plus4.svg" alt=""></a>
-						<a href="#" class="social"><img src="img/github3.svg" alt=""></a>
-						<a href="#" class="social"><img src="img/twitter3.svg" alt=""></a>
+						<a href="#" class="social" target="_blank"><i class="fa fa-google-plus"></i></a>
+						<a href="https://github.com/elena-kolevska" class="social" target="_blank"><i class="fa fa-github"></i></a>
+						<a href="https://twitter.com/elena_nosnaweb" class="social" target="_blank"><i class="fa fa-twitter"></i></a>
 					</div>
 				</div>
 			</div>
