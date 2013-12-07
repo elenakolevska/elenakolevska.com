@@ -100,9 +100,8 @@
 				</div>
 				<div class="col-md-6 text-left">
 					<h4>Sportbook.com.vc</h4>
-					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Earum id sapiente possimus eaque necessitatibus atque tempore soluta temporibus! Error iure expedita tempora deleniti ducimus fuga aliquam dolorem tenetur mollitia accusamus!</p>
-					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Earum id sapiente possimus eaque necessitatibus atque tempore soluta temporibus! Error iure expedita tempora deleniti ducimus fuga aliquam dolorem tenetur mollitia accusamus!</p>
-					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Earum id sapiente possimus eaque necessitatibus atque tempore soluta temporibus! Error iure expedita tempora deleniti ducimus fuga aliquam dolorem tenetur mollitia accusamus!</p>
+					<p>Sportbook.com.vc is an application for psychological evaluation of athletes.</p>
+					<p>The client (sport psychologist) had developed a system for evaluation, based on her long experience, but she was doing all the work manually. Working together we got to a beta product <a href="http://sportbook.com.vc" target="_blank" title="Sportbook.com.vc">sportbook.com.vc</a>  where athletes can sign up for a profile, answer a bunch of questions divided in 4 different tests and view their evaluations at the end. They can share their public profile with anyone, sending them a link, or they can choose to share the full profile, including their psychological evaluations with other sportbook users, by inviting them to their profile.</p>
 					<a href="#">More...</a>
 				</div>
 			</div>
