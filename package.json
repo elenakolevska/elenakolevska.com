@@ -29,7 +29,8 @@
     "grunt-contrib-concat": "~0.3.0",
     "grunt-contrib-less": "~0.8.1",
     "grunt-contrib-watch": "~0.5.3",
-    "less": "~1.4.2"
+    "less": "~1.4.2",
+    "grunt-uncss": "~0.1.5"
   },
   "main": "Gruntfile.js",
   "license": "BSD"

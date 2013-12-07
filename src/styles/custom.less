@@ -17,18 +17,114 @@
 .mg-b-sm{
 	margin-bottom: 20px;
 }
+html, body {
+  height: 100%;
+}
 body{
 	background: @gray-lighter;
+}
+.wrap {
+  min-height: 100%;
+  /* equal to footer height */
+  margin-bottom: -60px; 
+}
+.wrap:after {
+  content: "";
+  display: block;
 }
 h1,h2,h3,h4 {
 	font-weight: 400;
 }
+::selection
+{
+color:@brand-warning;
+}
+::-moz-selection
+{
+color:@brand-warning;
+}
 
+/*==========  Curvy border styles  ==========*/
+*,
+*:after,
+*:before {
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+section {
+	position: relative;
+	&:before, &:after{
+	    position: absolute;
+	    content: '';
+	    pointer-events: none;	
+	}
+}
+.doublediagonal {
+    z-index: 1;
+    padding-top: 6em;
+    background: #2072a7;
+	&:before, &:after{
+	    top: 0;
+	    left: -25%;
+	    z-index: -1;
+	    width: 150%;
+	    height: 75%;
+	    background: inherit;
+		/*transform*/
+		-webkit-transform:rotate(-2deg);
+		   -moz-transform:rotate(-2deg);
+		    -ms-transform:rotate(-2deg);
+		     -o-transform:rotate(-2deg);
+		        transform:rotate(-2deg);
+		/*transform-origin*/
+		-webkit-transform-origin:0 0;
+		   -moz-transform-origin:0 0;
+		    -ms-transform-origin:0 0;
+		     -o-transform-origin:0 0;
+		        transform-origin:0 0;
+	};
+	&:before{
+	    height: 50%;
+	    background: @gray;
+		/*transform*/
+		-webkit-transform:rotate(-3deg);
+		   -moz-transform:rotate(-3deg);
+		    -ms-transform:rotate(-3deg);
+		     -o-transform:rotate(-3deg);
+		        transform:rotate(-3deg);
+		/*transform-origin*/
+		-webkit-transform-origin:3% 0;
+		   -moz-transform-origin:3% 0;
+		    -ms-transform-origin:3% 0;
+		     -o-transform-origin:3% 0;
+		        transform-origin:3% 0;
+-webkit-transform-style: preserve-3d; 
+-webkit-transform: rotateZ(2deg);
+	}
 
+}
+svg {
+	display: block;
+}
+svg:not(:root) {
+	overflow: hidden;
+}
+// html|* > svg {
+// 	-webkit-transform-origin-x: 50%;
+// 	-webkit-transform-origin-y: 50%;
+// 	-webkit-transform-origin-z: initial;
+// }
+svg:not(:root), symbol, image, marker, pattern, foreignObject {
+	overflow: hidden;
+}
+#curveUpColor path, #curveDownColor path {
+	fill: @brand-primary;
+	stroke: darken(@brand-primary,30%);
+}
 /*==========  Navigation  ==========*/
 .navbar-default {
-	background-color: darken(@brand-primary,10%);
-	border: darken(@brand-primary,40%);
+	background-color: @brand-primary;
+	border: lighten(@brand-primary,70%);
 	.navbar-nav>li>a{
 		color: lighten(@brand-warning,10%);
 		font-size: 1em;
@@ -37,16 +133,15 @@ h1,h2,h3,h4 {
 		}
 	}
 }
-
 #header{
 	background: @brand-primary;
-	padding: 60px 0;
+	padding: 110px 0;
 	color: @gray-lighter;
 	text-shadow: 1px 1px 6px @gray-dark;
-	border-bottom: 1px solid @gray-light;
 	border-top: 2px solid @gray-light;
+	font-size: 1.2em;
 	h1 {
-		font-size: 4em;
+		font-size: 4.5em;
 		color: @brand-warning;
 		text-shadow: 1px 1px 3px #000;
 	}
@@ -65,7 +160,7 @@ h1,h2,h3,h4 {
 		.highlight{
 			font-style: italic;
 			color: darken(@brand-warning,10%);
-			font-size: 1em;
+			font-size: 0.7em;
 		}
 	}
 	.highlight{
@@ -78,12 +173,26 @@ h1,h2,h3,h4 {
 		color:darken(@brand-primary,10%);
 		position: absolute;
 	}
+	::selection
+	{
+		color:darken(@brand-primary,30%);
+		background: lighten(@brand-warning,40%);
+		text-shadow:none;
+	}
+	::-moz-selection
+	{
+		color:darken(@brand-primary,30%);
+		background: lighten(@brand-warning,40%);
+		text-shadow:none;
+	}
 }
 #portfolio{
 	background: @gray-light url('../img/geometry.png');
 	padding: 60px 0;
 	color: @gray-dark;
 	border-bottom: 1px solid @gray;
+    z-index: 1;
+    padding-top: 6em;
 	.project{
 		min-height: 305px;
 		&:hover img.top{
@@ -128,11 +237,26 @@ h1,h2,h3,h4 {
 	padding: 60px 0;
 	color: @gray-dark;
 	border-bottom: 1px solid @gray;
+	::selection
+	{
+		color:darken(@brand-primary,30%);
+		background: lighten(@brand-warning,40%);
+		text-shadow:none;
+	}
+	::-moz-selection
+	{
+		color:darken(@brand-primary,30%);
+		background: lighten(@brand-warning,40%);
+		text-shadow:none;
+	}	
 }
+
+
 #footer{
 	background: @gray-dark;
 	padding: 10px 0;
 	border-top: 1px solid @gray;
+	height: 60px; 
 	i {
 		font-size: 1.5em;
 		line-height: 1.5em;
@@ -140,6 +264,10 @@ h1,h2,h3,h4 {
 		margin: 0 8px;
 		&:hover{
 			color: darken(@brand-warning,40%);
+		}
 	}
-	}
+}
+#footer, .wrap:after {
+  /* .push must be the same height as footer */
+  height: 60px; }
 }

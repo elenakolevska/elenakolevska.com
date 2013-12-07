@@ -25,22 +25,40 @@ module.exports = function(grunt) {
             options: {
                 paths: ["./src/styles/"],
                 compress: true,
-                yuicompress: true,
-                uglify:true,
-                optimization: 2
             },
             files: {
                 "./style/main.css":"./src/styles/bootstrap.less"
             }
         }
     },
+    uncss: {
+      dist: {
+        files: {
+          'style/main.css': ['index.php']
+          }
+        }
+    },    
     watch: {
           styles: {
             // Which files to watch (all .less files recursively in the less directory)
-            files: ['./*.*','./src/styles/*.*','./src/js/*.*'],
-            tasks: ['less','concat'],
+            files: ['./src/styles/*.*'],
+            tasks: ['less','uncss'],
             options: {
-              nospawn: true,
+              livereload: true
+            }
+          },
+          js: {
+            // Which files to watch (all .less files recursively in the less directory)
+            files: ['./*.*','./src/styles/*.*','./src/js/*.*'],
+            tasks: ['concat'],
+            options: {
+              livereload: true
+            }
+          },
+          content: {
+            // Which files to watch (all .less files recursively in the less directory)
+            files: ['./*.php'],
+            options: {
               livereload: true
             }
           }
@@ -51,8 +69,9 @@ module.exports = function(grunt) {
   grunt.loadNpmTasks('grunt-contrib-concat');
   grunt.loadNpmTasks('grunt-contrib-watch');
   grunt.loadNpmTasks('grunt-contrib-less');
+  grunt.loadNpmTasks('grunt-uncss');
 
   // Default task.
-  grunt.registerTask('default', ['less', 'concat']);
+  grunt.registerTask('default', ['watch']);
 
 };

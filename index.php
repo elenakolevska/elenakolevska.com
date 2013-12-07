@@ -2,10 +2,28 @@
 <html>
 <head>
 	<title>Elena Kolevska</title>
+	<link rel="stylesheet" href="style/normalize.css">
 	<link rel="stylesheet" href="style/main.css">
 	<script src="js/application.js"></script>
 	<link href='http://fonts.googleapis.com/css?family=Crete+Round:400,400italic' rel='stylesheet' type='text/css'>
 	<link href="//netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css" rel="stylesheet">
+	<?php 
+		if ($_SERVER["SERVER_ADDR"] <> '127.0.0.1' )
+			{
+				?>
+				<script>
+				  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+				  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+				  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+				  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+				  ga('create', 'UA-45898227-1', 'elenakolevska.com');
+				  ga('send', 'pageview');
+
+				</script>
+				<?php
+			} 
+	?>	
 </head>
 <body>
 	<div class="wrap">
@@ -52,16 +70,19 @@
 					</div>
 					<div class="col-md-7 mg-t-bg">
 						<h1>Hi, I'm Elena</h1>
-						<div>I'm a backend web developer, but I've also been called a "full-stack" one a lot. I live on a mountain in Brasil with my baby son and his dad. I tweet as <a href="https://twitter.com/elena_nosnaweb" target="_blank">@elenanosnaweb</a> and sometimes write for <a href="http://laravel.com.br" target="_blank">laravel.com.br</a></div>
+						<div>I'm a backend web developer, but I also get called a "full-stack" one a lot. I live on a mountain in Brasil with my baby son and his dad. I tweet as <a href="https://twitter.com/elena_nosnaweb" target="_blank">@elena_kolevska</a> and sometimes write for <a href="http://laravel.com.br" target="_blank">laravel.com.br</a></div>
 						<div class="mg-t-bg highlight">Technology of choice: PHP</div>
 						<div class="highlight">Framework of choice: Laravel</div>
 					</div>
 				</div>
 			</div>
 		</section>
-
+<!-- 		<svg id="curveDownColor" xmlns="http://www.w3.org/2000/svg" version="1.1" width="100%" height="100" viewBox="0 0 100 100" preserveAspectRatio="none">
+			<path d="M0 0 C 50 100 80 100 100 0 Z"></path>
+		</svg>
+ -->		
 		<!-- ==========  Portfolio  ========== -->
-		<section id="portfolio">
+		<section id="portfolio" class="">
 			<i class="fa fa-code-fork"></i> 
 			<div class="container">
 			<div class="row">
@@ -159,23 +180,18 @@
 			</div>
 			</div>
 		</section>
-
-
-		<!-- ==========  Footer  ========== -->
-		<section id="footer">
-			<div class="container">
-				<div class="row">
-					<div class="col-md-4 col-md-offset-4 text-center">
-						<a href="#" class="social" target="_blank"><i class="fa fa-google-plus"></i></a>
-						<a href="https://github.com/elena-kolevska" class="social" target="_blank"><i class="fa fa-github"></i></a>
-						<a href="https://twitter.com/elena_nosnaweb" class="social" target="_blank"><i class="fa fa-twitter"></i></a>
-					</div>
+	</div>
+	<!-- ==========  Footer  ========== -->
+	<section id="footer">
+		<div class="container">
+			<div class="row">
+				<div class="col-md-4 col-md-offset-4 text-center">
+					<a href="#" class="social" target="_blank"><i class="fa fa-google-plus"></i></a>
+					<a href="https://github.com/elena-kolevska" class="social" target="_blank"><i class="fa fa-github"></i></a>
+					<a href="https://twitter.com/elena_nosnaweb" class="social" target="_blank"><i class="fa fa-twitter"></i></a>
 				</div>
 			</div>
-		</section>
-
-
-
-	</div>
+		</div>
+	</section>
 </body>
 </html>
