@@ -51,6 +51,7 @@
 	          <ul class="nav navbar-nav">
 	            <li><a href="#header">Home</a></li>
 	            <li><a href="#portfolio">My work</a></li>
+	            <li><a href="http://blog.elenakolevska.com">Blog</a></li>
 	            <li><a href="#contact">Contact me</a></li>
 	          </ul>
 	        </div><!--/.nav-collapse -->
